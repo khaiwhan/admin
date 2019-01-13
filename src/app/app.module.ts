@@ -9,10 +9,12 @@ import { MaterialModule } from './material';
 import { PageModule } from './nebular';
 import { ngxModule } from './ngx-bootstrap';
 import { ngModule } from './ng-bootstrap';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,7 @@ import { ngModule } from './ng-bootstrap';
     MaterialModule,
     ngxModule,
     ngModule,
-    NbThemeModule.forRoot({ name: 'default' }),
+    NbThemeModule.forRoot({ name: 'cosmic' }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,18 +3,24 @@ import {
     NbButtonModule,
     NbCardModule,
     NbLayoutModule,
+    NbInputModule,
+    NbUserModule,
 } from "@nebular/theme";
 
 @NgModule({
     imports: [
         NbCardModule,
         NbButtonModule,
-        NbLayoutModule
+        NbLayoutModule,
+        NbInputModule,
+        NbUserModule
     ],
     exports: [
         NbCardModule,
         NbButtonModule,
-        NbLayoutModule
+        NbLayoutModule,
+        NbInputModule,
+        NbUserModule
     ],
 })
 export class PageModule { }
