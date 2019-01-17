@@ -32,6 +32,7 @@
     "jquery": "^1.9.1",
     "nebular-icons": "^1.1.0",
     "ngx-bootstrap": "^3.1.4",
+    "npm": "^6.5.0",
     "popper.js": "^1.14.6",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
