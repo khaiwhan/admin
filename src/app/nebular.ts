@@ -5,6 +5,8 @@ import {
     NbLayoutModule,
     NbInputModule,
     NbUserModule,
+    NbSidebarModule,
+    NbMenuModule,
 } from "@nebular/theme";
 
 @NgModule({
@@ -13,14 +15,18 @@ import {
         NbButtonModule,
         NbLayoutModule,
         NbInputModule,
-        NbUserModule
+        NbUserModule,
+        NbSidebarModule,
+        NbMenuModule
     ],
     exports: [
         NbCardModule,
         NbButtonModule,
         NbLayoutModule,
         NbInputModule,
-        NbUserModule
+        NbUserModule,
+        NbSidebarModule,
+        NbMenuModule
     ],
 })
 export class PageModule { }

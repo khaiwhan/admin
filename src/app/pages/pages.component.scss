@@ -1,0 +1,14 @@
+:host nb-layout-header a {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+:host nb-sidebar{
+    margin-top: 20px;
+    transition: 1s;
+    nb-menu{
+        font-size: 15px;
+        i.fa{
+          font-size: 25px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<nb-layout>
+
+  <nb-layout-header fixed >
+    <a (click)="toggle()"><i class="fa fa-bars" style="font-size: 30px;float: left;"></i></a>
+  </nb-layout-header>
+  
+  <nb-sidebar>
+    <nb-menu tag="menu" [items]="menu"></nb-menu>
+  </nb-sidebar>
+
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+</nb-layout>
