@@ -7,6 +7,9 @@ import {
     NbUserModule,
     NbSidebarModule,
     NbMenuModule,
+    NbAlertModule,
+    NbToastrModule,
+    NbContextMenuModule,
 } from "@nebular/theme";
 
 @NgModule({
@@ -17,7 +20,10 @@ import {
         NbInputModule,
         NbUserModule,
         NbSidebarModule,
-        NbMenuModule
+        NbMenuModule,
+        NbAlertModule,
+        NbToastrModule,
+        NbContextMenuModule
     ],
     exports: [
         NbCardModule,
@@ -26,7 +32,10 @@ import {
         NbInputModule,
         NbUserModule,
         NbSidebarModule,
-        NbMenuModule
+        NbMenuModule,
+        NbAlertModule,
+        NbToastrModule,
+        NbContextMenuModule
     ],
 })
 export class PageModule { }

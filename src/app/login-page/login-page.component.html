@@ -8,18 +8,18 @@
             <h3><i class="material-icons">devices</i>&nbsp;Administration</h3>
           </nb-card-header>
           <nb-card-body>
-            <form>
+            <form [formGroup]="formLogin" (ngSubmit)="onLogin()">
               <div class="form-group">
                 <h6><i class="material-icons">person</i>&nbsp;Username</h6>
-                <input type="text" nbInput fullWidth shape="round" placeholder="Username">
+                <input type="text" nbInput fullWidth shape="round" placeholder="Username" formControlName="usernameInput">
               </div>
               <div class="form-group">
                 <h6><i class="material-icons">vpn_key</i>&nbsp;Password</h6>
-                <input type="password" nbInput fullWidth shape="round" placeholder="Password">
+                <input type="password" nbInput fullWidth shape="round" placeholder="Password" formControlName="passwordInput">
               </div>
               <div class="form-group">
                 <button nbButton hero status="danger" size="xsmall" style="font-size: 13px;float: right;">Cancle</button>
-                <button nbButton hero status="primary" size="xsmall" style="font-size: 13px;float: right;margin-right: 10px;">Submit</button>
+                <button type="submit" nbButton hero status="primary" size="xsmall" style="font-size: 13px;float: right;margin-right: 10px;">Submit</button>
               </div>
             </form>
           </nb-card-body>

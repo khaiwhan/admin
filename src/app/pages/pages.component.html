@@ -1,9 +1,13 @@
 <nb-layout>
 
-  <nb-layout-header fixed >
+  <nb-layout-header fixed>
     <a (click)="toggle()"><i class="fa fa-bars" style="font-size: 30px;float: left;"></i></a>
+    <span class="spacer" style="flex: 1 1 auto;"></span>
+    <nb-user size="middle" name={{user.usernameInput}} title="Engineer" picture="https://via.placeholder.com/50/4479e7/ffffff?Text=IMG"
+      [nbContextMenu]="items" nbContextMenuTag="my-context-menu">
+    </nb-user>
   </nb-layout-header>
-  
+
   <nb-sidebar>
     <nb-menu tag="menu" [items]="menu"></nb-menu>
   </nb-sidebar>
